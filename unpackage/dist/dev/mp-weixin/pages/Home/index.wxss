@@ -1,0 +1,181 @@
+#homeContainer {
+  width: 750rpx;
+  height: 1334rpx;
+}
+#homeContainer .homeHead {
+  width: 750rpx;
+  height: 148rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#homeContainer .homeHead .headTop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 750px;
+  height: 88rpx;
+  line-height: 88px;
+  padding: 0 30rpx;
+}
+#homeContainer .homeHead .headTop image {
+  display: block;
+  width: 138rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+#homeContainer .homeHead .headTop .search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 442rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28rpx;
+  border-radius: 12.5rpx;
+  background: #ededed;
+}
+#homeContainer .homeHead .headTop .search image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+#homeContainer .homeHead .headTop .search .searchText {
+  font-size: 28rpx;
+  color: #666;
+}
+#homeContainer .homeHead .headTop .loginButton {
+  width: 74rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 1px solid #dd1a21;
+  color: #dd1a21;
+  font-size: 24rpx;
+  margin-left: 16rpx;
+  border-radius: 8rpx;
+}
+#homeContainer .homeHead .headBottom {
+  width: 750rpx;
+  height: 60rpx;
+}
+#homeContainer .homeHead .headBottom .hide {
+  width: 750rpx;
+  height: 60rpx;
+}
+#homeContainer .homeHead .headBottom .hide .scroll-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 650rpx;
+  height: 60rpx;
+}
+#homeContainer .homeHead .headBottom .hide .scroll-view .scroll-item {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  margin-right: 20rpx;
+}
+#homeContainer .homeHead .headBottom .hide .scroll-view .scroll-item:first-child {
+  margin-left: 30rpx;
+  color: #dd1a21;
+  border-bottom: 6rpx solid #dd1a21;
+}
+#homeContainer .homeHead .headBottom .show {
+  width: 750rpx;
+  height: 372rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 88rpx;
+}
+#homeContainer .homeHead .headBottom .show .showTop {
+  width: 720rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #333;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+#homeContainer .homeHead .headBottom .show .showBottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 720rpx;
+  height: 312rpx;
+  padding: 24rpx 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 30rpx;
+}
+#homeContainer .homeHead .headBottom .show .showBottom .show-item {
+  width: 150rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333;
+  background: #fafafa;
+  margin: 0 30rpx 40rpx 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+#homeContainer .homeHead .headBottom .show .showBottom .show-item:first-child {
+  color: #dd1a21;
+  border: 1px solid #dd1a21;
+}
+#homeContainer .homeHead .headBottom .show .mask {
+  width: 750rpx;
+  height: 874rpx;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+#homeContainer .homeHead .headBottom .arrow {
+  width: 100rpx;
+  height: 60rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 88rpx;
+  z-index: 5;
+}
+#homeContainer .homeHead .headBottom .arrow image {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 18rpx 35rpx;
+}
+

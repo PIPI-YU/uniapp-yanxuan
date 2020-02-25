@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/Sort/index",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/Worth/index",
+			"style": {
+				"navigationBarTitleText": "值得买"
+			}
+		},
+		{
+			"path": "pages/Cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/Personal/index",
+			"style": {
+				"navigationBarTitleText": "个人"
+			}
+		},
+		{
+			"path": "pages/Search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#333",
+	    "selectedColor": "#dd1a21",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+			{
+	        "pagePath": "pages/Home/index",
+	        "iconPath": "static/images/tabBar/home02.png",
+	        "selectedIconPath": "static/images/tabBar/home01.png",
+	        "text": "首页"
+			},
+			{
+	        "pagePath": "pages/Sort/index",
+	        "iconPath": "static/images/tabBar/sort02.png",
+	        "selectedIconPath": "static/images/tabBar/sort01.png",
+	        "text": "分类"
+			},
+			{
+	        "pagePath": "pages/Worth/index",
+	        "iconPath": "static/images/tabBar/worth02.png",
+	        "selectedIconPath": "static/images/tabBar/worth01.png",
+	        "text": "值得买"
+			},
+			{
+	        "pagePath": "pages/Cart/index",
+	        "iconPath": "static/images/tabBar/cart02.png",
+	        "selectedIconPath": "static/images/tabBar/cart01.png",
+	        "text": "购物车"
+			},
+			{
+	        "pagePath": "pages/Personal/index",
+	        "iconPath": "static/images/tabBar/personal02.png",
+	        "selectedIconPath": "static/images/tabBar/personal01.png",
+	        "text": "个人"
+			}
+		]
+	}
+}
