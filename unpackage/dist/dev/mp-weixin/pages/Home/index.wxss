@@ -2,12 +2,18 @@
   width: 750rpx;
   height: 1334rpx;
 }
+#homeContainer .space {
+  width: 750rpx;
+  height: 148rpx;
+}
 #homeContainer .homeHead {
   width: 750rpx;
   height: 148rpx;
+  background: #fff;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 #homeContainer .homeHead .headTop {
   display: -webkit-box;
@@ -110,8 +116,7 @@
 #homeContainer .homeHead .headBottom .show {
   width: 750rpx;
   height: 372rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  background: #fff;
   position: absolute;
   left: 0;
   top: 88rpx;
@@ -122,6 +127,7 @@
   line-height: 60rpx;
   color: #333;
   font-size: 28rpx;
+  font-weight: bold;
   margin-left: 30rpx;
 }
 #homeContainer .homeHead .headBottom .show .showBottom {
@@ -135,8 +141,6 @@
   width: 720rpx;
   height: 312rpx;
   padding: 24rpx 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin-left: 30rpx;
 }
 #homeContainer .homeHead .headBottom .show .showBottom .show-item {
@@ -177,5 +181,93 @@
   width: 30rpx;
   height: 30rpx;
   margin: 18rpx 35rpx;
+}
+#homeContainer .swiper-container {
+  width: 750rpx;
+  height: 370rpx;
+}
+#homeContainer .swiper-container .swiper {
+  width: 750rpx;
+  height: 370rpx;
+}
+#homeContainer .swiper-container .swiper image {
+  width: 750rpx;
+  height: 370rpx;
+}
+#homeContainer .homeService {
+  width: 750rpx;
+  height: 72rpx;
+}
+#homeContainer .homeService .serviceList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 750rpx;
+  height: 72rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30rpx;
+}
+#homeContainer .homeService .serviceList .serviceItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-top: 18rpx;
+}
+#homeContainer .homeService .serviceList .serviceItem image {
+  width: 32rpx;
+  height: 32rpx;
+}
+#homeContainer .homeService .serviceList .serviceItem .text {
+  color: #333;
+  font-size: 24rpx;
+  margin: 0 0 0 8rpx;
+}
+#homeContainer .homeContent {
+  width: 750rpx;
+  height: 1000rpx;
+}
+#homeContainer .homeContent .kingKong {
+  width: 750rpx;
+  height: 372rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#homeContainer .homeContent .kingKong .kingKongList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 750rpx;
+}
+#homeContainer .homeContent .kingKong .kingKongList .kingKongItem {
+  width: 110rpx;
+  height: 156rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 15rpx 20rpx 10rpx;
+}
+#homeContainer .homeContent .kingKong .kingKongList .kingKongItem image {
+  width: 110rpx;
+  height: 110rpx;
+}
+#homeContainer .homeContent .kingKong .kingKongList .kingKongItem .kingKongText {
+  width: 110rpx;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: #333;
+  font-size: 24rpx;
 }
 

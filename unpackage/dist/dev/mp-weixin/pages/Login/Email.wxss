@@ -1,0 +1,126 @@
+#LoginEmailContainer {
+  width: 750rpx;
+  height: 1334rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginEmailContainer .LoginEmailHead {
+  width: 750rpx;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #fafafa;
+}
+#LoginEmailContainer .LoginEmailHead .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 25rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginEmailContainer .LoginEmailHead .header .left {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+}
+#LoginEmailContainer .LoginEmailHead .header .left image {
+  width: 60rpx;
+  height: 60rpx;
+}
+#LoginEmailContainer .LoginEmailHead .header .center {
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 135rpx 0 215rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #000;
+}
+#LoginEmailContainer .LoginEmailHead .header .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+#LoginEmailContainer .LoginEmailHead .header .right .fangdajing {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 7rpx;
+}
+#LoginEmailContainer .LoginEmailHead .header .right .gouwuche {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+#LoginEmailContainer .LoginEmailContent {
+  width: 750rpx;
+  height: 746rpx;
+  position: absolute;
+  left: 0;
+  top: 88rpx;
+}
+#LoginEmailContainer .LoginEmailContent .top {
+  width: 750rpx;
+  height: 90rpx;
+  text-align: center;
+  margin: 150rpx 0 40rpx;
+}
+#LoginEmailContainer .LoginEmailContent .top image {
+  width: 268rpx;
+  height: 90rpx;
+}
+#LoginEmailContainer .LoginEmailContent .center {
+  width: 750rpx;
+  padding: 50rpx 40rpx 0;
+}
+#LoginEmailContainer .LoginEmailContent .center input {
+  display: block;
+  width: 670rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #a4a4a4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginEmailContainer .LoginEmailContent .center .in-forget {
+  width: 670rpx;
+  height: 115rpx;
+  line-height: 115rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+#LoginEmailContainer .LoginEmailContent .center .in-forget .new {
+  float: left;
+}
+#LoginEmailContainer .LoginEmailContent .center .in-forget .forget {
+  float: right;
+}
+#LoginEmailContainer .LoginEmailContent .center .loginButton {
+  width: 670rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 28rpx;
+  background: #dd1a21;
+  border-radius: 3rpx;
+}
+#LoginEmailContainer .LoginEmailContent .center .other {
+  width: 670rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+  margin-top: 70rpx;
+}
+

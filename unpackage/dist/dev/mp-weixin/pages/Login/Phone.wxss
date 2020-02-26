@@ -1,0 +1,144 @@
+#LoginPhoneContainer {
+  width: 750rpx;
+  height: 1334rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginPhoneContainer .LoginPhoneHead {
+  width: 750rpx;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #fafafa;
+}
+#LoginPhoneContainer .LoginPhoneHead .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 25rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .left {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .left image {
+  width: 60rpx;
+  height: 60rpx;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .center {
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 135rpx 0 215rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #000;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .right .fangdajing {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 7rpx;
+}
+#LoginPhoneContainer .LoginPhoneHead .header .right .gouwuche {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent {
+  width: 750rpx;
+  height: 746rpx;
+  position: absolute;
+  left: 0;
+  top: 88rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent .top {
+  width: 750rpx;
+  height: 90rpx;
+  text-align: center;
+  margin: 56rpx 0 0;
+}
+#LoginPhoneContainer .LoginPhoneContent .top image {
+  width: 268rpx;
+  height: 90rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent .center {
+  width: 750rpx;
+  padding: 60rpx 40rpx 0;
+}
+#LoginPhoneContainer .LoginPhoneContent .center input {
+  display: block;
+  width: 670rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #a4a4a4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .getCode {
+  width: 670rpx;
+  height: 92rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .getCode .Code {
+  width: 168rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1rpx solid #333;
+  font-size: 28rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 320rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .in-forget {
+  width: 670rpx;
+  height: 115rpx;
+  line-height: 115rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .in-forget .new {
+  float: left;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .in-forget .forget {
+  float: right;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .loginButton {
+  width: 670rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  background: #dd1a21;
+  border-radius: 3rpx;
+}
+#LoginPhoneContainer .LoginPhoneContent .center .other {
+  width: 670rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+  margin-top: 200rpx;
+}
+

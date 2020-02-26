@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/Personal/index",
+			"style": {
+				"navigationBarTitleText": "个人"
+			}
+		},
+		{
 			"path": "pages/Home/index",
 			"style": {
 				"navigationBarTitleText": "首页"
@@ -25,15 +31,21 @@
 			}
 		},
 		{
-			"path": "pages/Personal/index",
-			"style": {
-				"navigationBarTitleText": "个人"
-			}
-		},
-		{
 			"path": "pages/Search/index",
 			"style": {
 				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/Login/Phone",
+			"style": {
+				"navigationBarTitleText": "手机号登录"
+			}
+		},
+		{
+			"path": "pages/Login/Email",
+			"style": {
+				"navigationBarTitleText": "邮箱登录"
 			}
 		}
 	],

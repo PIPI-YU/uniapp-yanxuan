@@ -1,5 +1,6 @@
 <template>
 	<view id="homeContainer">
+		<view class="space"></view>
 		<view class="homeHead">
 			<view class="headTop">
 				<image src="//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png" mode=""></image>
@@ -44,13 +45,50 @@
 			</view>
 		</view>
 		<view class="swiper-container">
-			
+			<swiper class="swiper" indicator-dots="true" autoplay="true" interval="2000" circular="true">
+					<swiper-item>
+							<image src="../../static/images/Home/swiper01.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper02.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper03.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper04.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper05.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper06.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper07.webp" mode=""></image>
+					</swiper-item>
+					<swiper-item>
+							<image src="../../static/images/Home/swiper08.webp" mode=""></image>
+					</swiper-item>
+			</swiper>
 		</view>
 		<view class="homeService">
-			
+			<uni-list class="serviceList">
+				<uni-list-item class="serviceItem" v-for="(serviceItem,index) in indexData.policyDescList" :key="index">
+					<image :src="serviceItem.icon" mode=""></image>
+					<view class="text">{{serviceItem.desc}}</view>
+				</uni-list-item>
+			</uni-list>
 		</view>
 		<view class="homeContent">
-			
+			<view class="kingKong">
+				<view class="kingKongList">
+					<view class="kingKongItem" v-for="(kkItem,index) in indexData.kingKongModule.kingKongList" :key="index">
+						<image :src="kkItem.picUrl" mode=""></image>
+						<view class="kingKongText">{{kkItem.text}}</view>
+					</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -59,8 +97,20 @@
 	export default {
 		data(){
 			return{
-				isHide:true
+				isHide:true,
+				indexData:{}
 			}
+		},
+		onLoad(){
+			uni.request({
+				url:"http://localhost:3001/getIndexData",
+				// dataType:"json",
+				success:(data)=>{
+					this.indexData = data.data;
+					console.log(data);
+					},
+				fail:()=>{console.log("请求失败")}
+			})
 		},
 		methods:{
 			point(isHide){
@@ -84,12 +134,17 @@
 	#homeContainer
 		width 750upx
 		height 1334upx
+		.space
+			width 750upx
+			height 148upx
 		.homeHead
 			width 750upx
 			height 148upx
+			background #fff
 			position fixed
 			left 0
 			top 0
+			z-index 1
 			.headTop
 				display flex
 				align-items center
@@ -158,7 +213,7 @@
 				.show
 					width 750upx
 					height 372upx
-					box-sizing border-box
+					background #fff
 					position absolute
 					left 0
 					top 88upx
@@ -168,6 +223,7 @@
 						line-height 60upx
 						color #333
 						font-size 28upx
+						font-weight bold
 						margin-left 30upx
 					.showBottom
 						display flex
@@ -175,7 +231,6 @@
 						width 720upx
 						height 312upx
 						padding 24upx 0
-						box-sizing border-box
 						margin-left 30upx
 						.show-item
 							width 150upx
@@ -209,4 +264,60 @@
 						width 30upx
 						height 30upx
 						margin 18upx 35upx
+		.swiper-container
+			width 750upx
+			height 370upx
+			.swiper
+				width 750upx
+				height 370upx
+				image
+					width 750upx
+					height 370upx
+		.homeService
+			width 750upx
+			height 72upx
+			.serviceList
+				display flex
+				justify-content space-between
+				width 750upx
+				height 72upx
+				box-sizing border-box
+				padding 0 30upx
+				.serviceItem
+					display flex
+					height 36upx
+					line-height 36upx
+					margin-top 18upx 
+					image
+						width 32upx
+						height 32upx
+					.text
+						color #333
+						font-size 24upx
+						margin 0 0 0 8upx
+		.homeContent
+			width 750upx
+			height 1000upx
+			.kingKong
+				width 750upx
+				height 372upx
+				box-sizing border-box
+				.kingKongList
+					display flex
+					flex-wrap wrap
+					width 750upx
+					.kingKongItem
+						width 110upx
+						height 156upx
+						box-sizing border-box
+						margin 15upx 20upx 10upx
+						image
+							width 110upx
+							height 110upx
+						.kingKongText
+							width 110upx
+							text-align center
+							box-sizing border-box
+							font-size #333
+							font-size 24upx
 </style>
