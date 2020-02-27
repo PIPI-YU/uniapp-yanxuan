@@ -1,7 +1,6 @@
 #sortContainer {
   width: 750rpx;
   height: 100%;
-  position: relative;
 }
 #sortContainer .sortHead {
   display: -webkit-box;
@@ -48,26 +47,24 @@
   display: -ms-flexbox;
   display: flex;
   width: 750rpx;
-  height: 1148rpx;
+  height: 1000rpx;
   position: absolute;
   left: 0;
   top: 88rpx;
 }
 #sortContainer .sortContent .left {
   width: 162rpx;
-  height: 1148rpx;
   background: #fff;
   border-right: 1rpx solid rgba(0,0,0,0.15);
 }
-#sortContainer .sortContent .left .BScroll {
+#sortContainer .leftList {
   width: 162rpx;
-  height: 1120rpx;
-}
-#sortContainer .sortContent .left .BScroll .leftList {
-  width: 162rpx;
+  height: 1000rpx;
   padding: 40rpx 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-#sortContainer .sortContent .left .BScroll .leftList .leftItem {
+#sortContainer .leftList .leftItem {
   list-style: none;
   width: 162rpx;
   height: 50rpx;
@@ -75,16 +72,58 @@
   font-size: 28rpx;
   text-align: center;
   margin-bottom: 30rpx;
-}
-#sortContainer .sortContent .left box-sizing border-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #333;
 }
-#sortContainer .sortContent .left .leftItem:first-child {
+#sortContainer .leftList .leftItem:first-child {
   color: #ab2b2b;
   border-left: 6rpx solid #ab2b2b;
 }
-#sortContainer .sortContent .right {
+#sortContainer .leftList .right {
   width: 588rpx;
   height: 1148rpx;
+}
+#sortContainer .rightContent {
+  width: 528rpx;
+  margin: 20rpx 30rpx 0;
+}
+#sortContainer .rightContent .rightTop {
+  width: 528rpx;
+  height: 192rpx;
+  margin-bottom: 32rpx;
+}
+#sortContainer .rightContent .rightTop image {
+  width: 528rpx;
+  height: 192rpx;
+}
+#sortContainer .rightContent .rightList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 528rpx;
+}
+#sortContainer .rightContent .rightList .rightItem {
+  width: 144rpx;
+  height: 216rpx;
+}
+#sortContainer .rightContent .rightList .rightItem image {
+  width: 144rpx;
+  height: 144rpx;
+}
+#sortContainer .rightContent .rightList .rightItem .text {
+  width: 144rpx;
+  height: 72rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #333;
+  font-size: 24rpx;
 }
 

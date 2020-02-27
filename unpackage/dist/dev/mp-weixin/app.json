@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/Personal/index",
     "pages/Home/index",
     "pages/Sort/index",
     "pages/Worth/index",
     "pages/Cart/index",
+    "pages/Personal/index",
     "pages/Search/index",
     "pages/Login/Phone",
     "pages/Login/Email"

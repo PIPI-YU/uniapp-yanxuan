@@ -16,7 +16,9 @@
             "delay" : 0
         },
         /* 模块配置 */
-        "modules" : {},
+        "modules" : {
+            "OAuth" : {}
+        },
         /* 应用发布信息 */
         "distribute" : {
             /* android打包配置 */
@@ -49,7 +51,14 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx32e51ea130b3f4a8",
+                        "appsecret" : "4bd21bd48502a9cc763f32b1ab861250"
+                    }
+                }
+            }
         }
     },
     /* 快应用特有相关 */
@@ -62,24 +71,23 @@
             "es6" : true
         },
         "usingComponents" : true
-				/*配置代理*/
-				// "devServer": {    
-				//     "proxy": {
-				//       "/api": {
-				//         "target": "http://localhost:3001",
-				//         "ws": true,
-				//         "changeOrigin": true,
-				//         "pathRewrite":{"^/api":""}
-				//       },
-				//       "/foo": {
-				//         "target": "https://m.you.163.com",
-				//         "ws": true,
-				//         "changeOrigin": true,
-				//         "pathRewrite":{"^/foo" : ""}
-				//       }
-				//     }
-				//   } 
     },
+    /*配置代理*/// "devServer": {    
+    //     "proxy": {
+    //       "/api": {
+    //         "target": "http://localhost:3001",
+    //         "ws": true,
+    //         "changeOrigin": true,
+    //         "pathRewrite":{"^/api":""}
+    //       },
+    //       "/foo": {
+    //         "target": "https://m.you.163.com",
+    //         "ws": true,
+    //         "changeOrigin": true,
+    //         "pathRewrite":{"^/foo" : ""}
+    //       }
+    //     }
+    //   } 
     "mp-alipay" : {
         "usingComponents" : true
     },

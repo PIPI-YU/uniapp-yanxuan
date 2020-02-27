@@ -1,42 +1,110 @@
-.content {
+#searchContainer {
+  width: 750rpx;
+  height: 1334rpx;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+#searchContainer .searchContent {
+  width: 750rpx;
+  height: 523rpx;
+}
+#searchContainer .searchContent .searchTop {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 750rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 1rpx solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30rpx;
 }
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-.text-area {
+#searchContainer .searchContent .searchTop .inputContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 604rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #f4f4f4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20rpx;
+  margin: auto 0;
 }
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+#searchContainer .searchContent .searchTop .inputContainer .img {
+  width: 28rpx;
+  height: 28rpx;
+  margin: 15rpx 16rpx 0 0;
+}
+#searchContainer .searchContent .searchTop .inputContainer .text {
+  width: 520rpx;
+  height: 39rpx;
+  font-size: 28rpx;
+  background: #f4f4f4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(0,0,0,0.8);
+  padding: 0 0 0 2rpx;
+  margin: auto 0;
+}
+#searchContainer .searchContent .searchTop .cancel {
+  width: 56rpx;
+  height: 42rpx;
+  color: #333;
+  font-size: 28rpx;
+  margin: 0 0 0 30rpx;
+}
+#searchContainer .searchContent .searchBottom {
+  width: 750rpx;
+  height: 436rpx;
+}
+#searchContainer .searchContent .searchBottom .header {
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 auto;
+}
+#searchContainer .searchContent .searchBottom .header ._h3 {
+  font-size: 28rpx;
+  color: #999;
+}
+#searchContainer .searchContent .searchBottom .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 720rpx;
+  margin: 0 30rpx 32rpx 30rpx;
+}
+#searchContainer .searchContent .searchBottom .list .listItem {
+  display: block;
+  font-size: 24rpx;
+  color: #333;
+  line-height: 46rpx;
+  margin: 0 32rpx 32rpx 0;
+  padding: 0 15rpx;
+  border: 1rpx solid #999;
+  border-radius: 4rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#searchContainer .searchContent .searchBottom .list .listItem:first-child {
+  color: #dd1a21;
+  border: 1rpx solid #dd1a21;
+}
+#searchContainer .mask {
+  width: 750rpx;
+  height: 811rpx;
+  background: #ededed;
 }
 
